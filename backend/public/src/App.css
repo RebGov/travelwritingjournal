@@ -1,0 +1,196 @@
+.App {
+  background-image: url("../src/images/dariusz-sankowski-56725-unsplash.jpg");
+  background-size: cover;
+  text-align: center;
+  min-height: 150vh;
+
+}
+.footer-logo{
+  width: 2rem;
+  height:2rem;
+}
+/* .App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+} */
+
+/* .createContent {
+  width: 100%;
+  height: 100rem;
+} */
+.header-navbar{
+  background-color: #efebe9;
+
+}
+/* .header-text {
+  textDecoration: none;
+  color: #3e2723 ;
+
+} */
+.link{
+  textDecoration: none;
+  color: #3e2723 ;
+}
+
+.header-menu{
+  background-color: #efebe9;
+  opacity: .8;
+}
+.App-header {
+
+
+  /* width: 110%;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  fontSize: calc(10px + 2vmin);
+  color: white; */
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+.App-logo {
+ object-fit: cover;
+ width: 5rem;
+ height: 5rem;
+}
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+.about-page {
+  width: 40rem;
+  height: 11rem;
+  background-color: #d7ccc8;
+  opacity: .7;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-20rem;/* half width*/
+   margin-top:-5rem;/* half height*/
+}
+
+.profile-page{
+  width: 40rem;
+  height: 11rem;
+  background-color: #d7ccc8;
+  opacity: .7;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-20rem;/* half width*/
+   margin-top:-5rem;/* half height*/
+}
+.home-page{
+  width: 40rem;
+  height: 11rem;
+  background-color: #d7ccc8;
+  opacity: .7;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-20rem;/* half width*/
+   margin-top:-5rem;/* half height*/
+}
+.UserSignIn {
+  width: 50rem;
+  height: 17rem;
+  background-color: #d7ccc8;
+  opacity: .7;
+
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-25rem;/* half width*/
+   margin-top:-8.5rem;/* half height*/
+}
+.UserSignUp{
+  width: 50rem;
+  height: 30rem;
+  background-color: #d7ccc8;
+  opacity: .7;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-25rem;/* half width*/
+   margin-top:-15rem;/* half height*/
+}
+.contact-page{
+  width: 40rem;
+  height: 6rem;
+  background-color: #d7ccc8;
+  opacity: .7;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-20rem;/* half width*/
+   margin-top:-3rem;/* half height*/
+
+}
+.All-notes {
+  grid-area: All-notes;
+  background-color: #efebe9;
+  opacity: .8;
+  overflow-y: scroll;
+
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+}
+.Note-page {
+  grid-area: Note-page;
+  background-color: #efebe9;
+  opacity: .8;
+  overflow-y: scroll;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  fontSize: calc(10px + 2vmin);
+  color: black;
+}
+.edit-path{
+
+}
+.Note-search {
+  grid-area: Note-search;
+
+  bottom:0;
+  left: 0;
+
+
+}
+.note-search-bar{
+  background-color: #efebe9;
+}
+.Note-container {
+  /* background-image: url("../src/images/dariusz-sankowski-56725-unsplash.jpg"); */
+  /* background-image:url("../src/images/ian-dooley-280928-unsplash.jpg"); */
+  /* opacity: .8;
+  background-size: cover; */
+  min-height: 150vh;
+  max-height: 150vh;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 1px 1px;
+  grid-template-areas: "Note-search Note-search Note-search Note-search" "All-notes Note-page Note-page Note-page" "All-notes Note-page Note-page Note-page" "All-notes Note-page Note-page Note-page";
+}
+
+.Travel-logo {
+ object-fit: cover;
+ width: 10px;
+ height: 10px;
+}
