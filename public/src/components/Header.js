@@ -57,34 +57,35 @@ class Header extends Component {
 
                 <DropdownMenu right className="header-menu" >
                   <DropdownItem >
-                    <Link style={{"textDecoration": "none", color: "#3e2723"}} to="/about">About Travel Writing</Link>
+                    <Link style={{"textDecoration": "none", color: "#3e2723"}} to={{pathname:'/about'}}>About Travel Writing</Link>
+
                   </DropdownItem>
                   <DropdownItem >
-                    <Link style={{"textDecoration": "none", color: "#3e2723"}} to="/contact">Contact</Link>
+                    <Link style={{"textDecoration": "none", color: "#3e2723"}} to={{pathname:'/contact'}}>Contact</Link>
                   </DropdownItem>
                   <hr></hr>
                   {!this.props.userSignedIn ? (
                     <React.Fragment>
                       <DropdownItem className="header-text" >
-                        <Link style={{"textDecoration": "none", color: "#3e2723"}} to="/login" >Login</Link>
+                        <Link style={{"textDecoration": "none", color: "#3e2723"}} to={{pathname: '/login'}}>Login</Link>
                       </DropdownItem>
                       <DropdownItem >
-                        <Link style={{"textDecoration": "none", color: "#3e2723"}}  to="/signup">Create Account</Link>
+                        <Link style={{"textDecoration": "none", color: "#3e2723"}}  to={{pathname: '/signup'}}>Create Account</Link>
                       </DropdownItem>
 
                     </React.Fragment>
 
                   ): (
                     <React.Fragment>
-                  
+
                     <DropdownItem>
-                    <Link  style={{"textDecoration": "none", color: "#3e2723"}}  to={`/${this.props.username}/profile`}>Profile</Link>
+                    <Link  style={{"textDecoration": "none", color: "#3e2723"}}  to={{pathname: `/${this.props.username}/profile`}}>Profile</Link>
                     </DropdownItem>
                       <DropdownItem>
-                        {this.props.userSignedIn ? ( <Link style={{"textDecoration": "none", color: "#3e2723"}}  to={`/${this.props.username}/journal_entries/current`}>Your Writings</Link> ) : null}
+                        {this.props.userSignedIn ? ( <Link style={{"textDecoration": "none", color: "#3e2723"}}  to={{pathname:`/${this.props.username}/journal_entries/current`}}>Your Writings</Link> ) : null}
                       </DropdownItem>
                       <DropdownItem >
-                     <Link style={{"textDecoration": "none", color: "#3e2723"}} to={`/${this.props.username}/journal_entries/new`}>New Travel Writing Story</Link>
+                     <Link style={{"textDecoration": "none", color: "#3e2723"}} to={{pathname: `/${this.props.username}/journal_entries/new`}}>New Travel Writing Story</Link>
                       </DropdownItem>
 
                       <hr></hr>
