@@ -56,5 +56,4 @@ ActiveRecord::Schema.define(version: 2018_10_11_204927) do
   end
 
   add_foreign_key "notes", "users"
-  add_foreign_key "photos", "notes"
 end

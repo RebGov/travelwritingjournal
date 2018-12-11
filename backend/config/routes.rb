@@ -16,4 +16,7 @@ Rails.application.routes.draw do
 
     end
   end
+  # get '*', to: 'static#index'
+  get '*other', to: redirect('/')
+  # DOES NOT WORK FOR ACTIVE STORAGE.
 end
